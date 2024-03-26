@@ -45,3 +45,8 @@ class Lista_Linkada:
             atual.valor = elem          # atualizamos o valor do atual
         else:
             raise IndentationError("list index out of range")   # Se ele o atual não existir mostramos o erro
+        
+    # def inserir_item_numa_posicao(self, index, elem):
+    #     if(index > self._tamanho):
+    #         self.adicionar(elem)
+    #     else:

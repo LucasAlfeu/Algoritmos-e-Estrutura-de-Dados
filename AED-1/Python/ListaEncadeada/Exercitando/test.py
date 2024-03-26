@@ -19,7 +19,7 @@ while(atual):
 # print("--------------------------")
 # lista.find(2)
 #print("--------------------------")
-lista.modify(4, 0)
+lista.modify(4, "Vasco")
 print("--------------------------")
 
 atual = lista.head
