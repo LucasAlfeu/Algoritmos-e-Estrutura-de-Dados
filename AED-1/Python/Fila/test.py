@@ -7,9 +7,10 @@ def mostra_menu():
     print("")
     print("Menu")
     print("")
-    print("1- Receber")
-    print("2- Atender")
+    print("1- Enqueue")
+    print("2- Dequeue")
     print("3- Imprimir fila")
+    print("4- size")
     print("")
 
 while(True):
@@ -19,14 +20,19 @@ while(True):
     match i :
         case "1":
             add = input("Insira seu nome: ")
-            nome.append_first(add)
+            nome.enqueue(add)
             print("")
         case "2":
             print("Atendendo...")
-            nome.remove_first()
+            nome.dequeue()
             print("")
         case "3":
             print("")
             print("Fila: ")
-            nome.show_line()
+            nome.imprimir()
+            print("")
+        case "4":
+            print("")
+            print("A fila tem: ")
+            nome.get_size()
             print("")
